@@ -76,7 +76,7 @@ button {
 /* line 39, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Satisfy", cursive;
-  color: #000000;
+  color: black;
 }
 
 /* line 43, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
@@ -946,8 +946,12 @@ h3 {
 /* line 16, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_header.scss */
 .header-area .main-header-area {
   padding: 25px 0px;
-  background: #fff;
   background: transparent;
+  /* opacity: 0.5; */
+}
+
+.logo-main {
+  width: 9rem;
 }
 
 @media (max-width: 767px) {
@@ -1428,7 +1432,13 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
+  /* background-image: url(../img/banner/banner2.jpg); */
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(204, 175, 175, 0.4),
+    rgba(223, 221, 221, 0.3)),
+url(../img/banner/pistachio-tart.jpg);
+  height: 50%;
 }
 
 /* line 4, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_slider.scss */
