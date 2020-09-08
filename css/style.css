@@ -4493,6 +4493,7 @@ url(../img/banner/pistachio-tart.jpg);
 /* line 187, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_recepie.scss */
 .recepie_videoes_area .videos_thumb .big_img img {
   width: 100%;
+  border-radius: 5px;
 }
 
 /* line 191, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_recepie.scss */
