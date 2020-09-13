@@ -75,7 +75,7 @@ button {
 
 /* line 39, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Satisfy", cursive;
+  font-family: 'Lobster', cursive;
   color: black;
 }
 
@@ -1523,8 +1523,8 @@ url(../img/banner/pistachio-tart.jpg);
 
 /* line 56, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  color: #fff;
-  font-family: "Satisfy", cursive;
+  color: #25282A;
+  font-family: 'Lobster', cursive;
   font-size: 100px;
   text-transform: capitalize;
 }
@@ -2353,7 +2353,7 @@ url(../img/banner/pistachio-tart.jpg);
 /* line 103, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_gallery.scss */
 .portfolio_details_area .portfolio_details_content p {
   font-size: 16px;
-  font-family: "Satisfy", cursive;
+  font-family: 'Lobster', cursive;
   color: #727272;
   line-height: 28px;
 }
@@ -2875,7 +2875,7 @@ url(../img/banner/pistachio-tart.jpg);
   cursor: pointer;
   display: block;
   float: left;
-  font-family: "Satisfy", cursive;
+  font-family: 'Lobster', cursive;
   font-weight: normal;
   width: 100% !important;
   /* height: 42px; */
