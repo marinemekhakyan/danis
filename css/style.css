@@ -2715,8 +2715,12 @@ url(../img/banner/pistachio-tart.jpg);
 }
 
 /* line 1, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_bradcam.scss */
-.bradcam_bg_1 {
+/* .bradcam_bg_1 {
   background-image: url(../img/banner/bradcam.png);
+} */
+
+.bradcam_text {
+  margin: 2rem;
 }
 
 /* line 4, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_bradcam.scss */
