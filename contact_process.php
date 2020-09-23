@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
     $number = $_POST['number'];
 	$message = $_POST['message'];
 
-	$mailTo = "marine@ctala.com";
+	$mailTo = "";
 	$headers = "From: $from";
 	$txt = "You have received an email from ".$name.".\n\n".$message;
 
@@ -54,4 +54,6 @@ if (isset($_POST['submit'])) {
 
 	header("Location: index.php?mailsend");
 }
+
+?>
 
