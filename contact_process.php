@@ -1,37 +1,57 @@
+ <?php
+
+    // $to = "marinemekhakyan@gmail.com";
+    // $from = $_POST['email'];
+    // $name = $_POST['name'];
+    // $subject = $_POST['subject'];
+    // $number = $_POST['number'];
+    // $cmessage = $_POST['message'];
+
+    // $headers = "From: $from";
+	// $headers = "From: " . $from . "\r\n";
+	// $headers .= "Reply-To: ". $from . "\r\n";
+	// $headers .= "MIME-Version: 1.0\r\n";
+	// $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+    // $subject = "You have a message from Daniela's Cake.";
+
+    // $logo = 'img/logo1.png';
+    // $link = '#';
+
+	// $body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
+	// $body .= "<table style='width: 100%;'>";
+	// $body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
+	// $body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
+	// $body .= "</td></tr></thead><tbody><tr>";
+	// $body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
+	// $body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
+	// $body .= "</tr>";
+	// $body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
+	// $body .= "<tr><td></td></tr>";
+	// $body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
+	// $body .= "</tbody></table>";
+	// $body .= "</body></html>";
+
+    // $send = mail($to, $subject, $body, $headers);
+
+// ?>
+
 <?php
 
-    $to = "marinemekhakyan@gmail.com";
-    $from = $_POST['email'];
+if (isset($_POST['submit'])) {
+	$from = $_POST['email'];
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     $number = $_POST['number'];
-    $cmessage = $_POST['message'];
+	$message = $_POST['message'];
 
-    $headers = "From: $from";
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $from . "\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$mailTo = "marine@ctala.com";
+	$headers = "From: $from";
+	$txt = "You have received an email from ".$name.".\n\n".$message;
 
-    $subject = "You have a message from Daniela's Cake.";
+	
+	mail($mailTo, $subject, $txt, $headers);
 
-    $logo = 'img/logo1.png';
-    $link = '#';
+	header("Location: index.php?mailsend");
+}
 
-	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
-	$body .= "<table style='width: 100%;'>";
-	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
-	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
-	$body .= "</td></tr></thead><tbody><tr>";
-	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
-	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
-	$body .= "</tr>";
-	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
-	$body .= "<tr><td></td></tr>";
-	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
-	$body .= "</tbody></table>";
-	$body .= "</body></html>";
-
-    $send = mail($to, $subject, $body, $headers);
-
-?>
