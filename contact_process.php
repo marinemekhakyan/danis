@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
     $number = $_POST['number'];
 	$message = $_POST['message'];
 
-	$mailTo = "";
+	$mailTo = "marinemekhakyan@yahoo.com";
 	$headers = "From: $from";
 	$txt = "You have received an email from ".$name.".\n\n".$message;
 
